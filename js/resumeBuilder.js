@@ -5,13 +5,13 @@ var bio = {
         "mobile": "+7 950 289-70-34",
         "email": "oleges@list.ru",
         "github": "oleges",
-        "twitter": "None",
-        "location": "г. Владивосток"
+        "twitter": "none",
+        "location": "Vladivostok, Primorsky Krai, Russia"
     },
-    "welcomeMessage": "And Now for Something Completely Different",
-    "skills": ["HTML", "CSS", "JavaScript", "Python", "Git"],
-    "biopic": "images/fry.jpg"
-};
+    "welcomeMessage": "And Now for Something Completely Different...",
+    "skills": ["Python", "HTML", "CSS", "JavaScript", "PHP", "MySQL", "Git"],
+    "biopic": "images/photo.jpg"
+}
 
 bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -49,20 +49,20 @@ bio.display = function() {
 var work = {
     "jobs": [
     {
-        "employer": "ПримЭкоЭнерго",
-        "title": "Энергоаудитор",
-        "location": "г. Владивосток, ул. Некрасовская, 88А",
+        "employer": "PrimEcoEnergo",
+        "title": "Energy Auditor",
+        "location": "Nekrasovskaya St, 88А, Vladivostok",
         "dates": "2011-2013",
-        "description": "Обследование объектов, разработка мероприятий по повышению энергоэффективности"
+        "description": "Plan and schedule projects and audit methodology and procedures. Inspect and analyze homes and building structures, heating systems, ventilation, air conditioning, water, and industrial processes to ensure energy use is optimal. Make recommendations for, coordinate, and participate in construction of retrofit measures and energy efficiency upgrades."
     },
     {
         "employer": "Modern Engineering Systems",
-        "title": "Инженер-проектировщик",
-        "location": "г. Владивосток, ул. Стрельникова, 7",
+        "title": "Design Engineer",
+        "location": "Strelnikova St, 7, Vladivostok",
         "dates": "2013-2014",
-        "description": "Проектирование тепловых пунктов"
+        "description": "Create blueprints and schematics for district heating substations using computer-aided design (CAD) and computer-assisted engineering (CAE) software. Create specification documents for each product."
     }]
-};
+}
 
 work.display = function() {
     for (var job in work.jobs) {
@@ -84,11 +84,11 @@ var projects = {
     {
         "title": "getalb",
         "dates": "2015",
-        "description": "Script for downloading entire albums at once from http://musicmp3spb.org",
+        "description": "Script for downloading entire albums at once from http://musicmp3spb.org. Wrriten in Python.",
         "images": [
-        "images/mp3.gif"]
+        "images/getalb.png"]
     }]
-};
+}
 
 projects.display = function() {
     for (var project in projects.projects) {
@@ -111,12 +111,12 @@ projects.display = function() {
 var education = {
     "schools": [
     {
-        "name": "Дальневосточный федеральный университет",
-        "location": "г. Владивосток, ул. Пушкинская, 10",
-        "degree": "Специалист",
-        "majors": "Промышленная теплоэнергетика",
+        "name": "Far Eastern Federal University",
+        "location": "Pushkinskaya St, 10, Vladivostok",
+        "degree": "Engineer",
+        "majors": "Industrial Heat Power Engineering",
         "dates": 2011,
-        "url": "http://www.dvfu.ru/"
+        "url": "www.dvfu.ru"
     }],
     "onlineCourses": [
     {
@@ -124,6 +124,12 @@ var education = {
         "school": "Coursera",
         "date": 2014,
         "url": "https://www.coursera.org/course/comnetworks"
+    },
+    {
+        "title": "Introduction to Linux",
+        "school": "EdX",
+        "date": 2015,
+        "url": "https://www.edx.org/course/v2/introduction-linux-linuxfoundationx-lfs101x-2"
     }]
 }
 
@@ -158,7 +164,7 @@ work.display();
 projects.display();
 education.display();
 
-$("#main").append(internationalizeButton);
+// $("#main").append(internationalizeButton);
 
 function inName() {
     var name = bio.name;

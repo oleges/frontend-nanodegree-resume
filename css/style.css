@@ -189,6 +189,9 @@ span {
   .biopic {
     width: 150px;
   }
+  #projects img {
+    width: 300px;
+  }
   .welcome-message {
     display: none;
   }
